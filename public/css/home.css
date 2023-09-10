@@ -1,0 +1,74 @@
+/* CSS for Fixed Table Header in index4.html */
+.fixed-th {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 3px 1px #ddd;
+    table-layout: fixed;
+    border:10px solid #fff;
+    }
+    .fixed-th thead {
+    background-color: white;
+    color:#333;
+    display: block;
+    }
+    
+    /* make it scrolled */
+    .fixed-th tbody {
+    display: block;
+    overflow-y: auto;
+    width: 100%;
+    max-height: 300px;
+    position: static;
+    }/* end make it scrolled */
+    
+    .fixed-th th,.fixed-th td{
+    vertical-align: top;
+    padding:10px 7px;
+    text-align: left;
+    }
+    .fixed-th th + th, .fixed-th td + td {
+    border-left:1px solid #ddd;
+    }
+    .fixed-th th:nth-child(1), .fixed-th td:nth-child(1) {
+    min-width:40px;
+    }
+    .fixed-th th:nth-child(2), .fixed-th td:nth-child(2) {
+    width:300px;
+    }
+    .fixed-th th:nth-child(3), .fixed-th td:nth-child(3) {
+    width:250px;
+    }
+    .fixed-th th:nth-child(4), .fixed-th td:nth-child(4) {
+        width:470px;
+    }/* End CSS for Fixed Table Header in index4.html */
+
+/* CSS for Zebra Table in index.html */
+.zebra-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 3px 1px #ddd;
+    overflow: hidden;
+    border:10px solid #fff;
+    }
+    .zebra-table th,.zebra-table td{
+    vertical-align: top;
+    padding:10px 7px;
+    text-align: left;
+    margin:0;
+    }
+    .zebra-table tbody tr:nth-child(odd) { /* Make table like zebra */
+    background:#eee;
+    }/* End CSS for Zebra Table in index.html */
+
+
+    #maino {
+        margin-top: 60px;
+        padding: 20px 30px;
+        transition: all 0.3s;
+      }
+      
+      @media (max-width: 1199px) {
+        #maino {
+          padding: 20px;
+        }
+      }
